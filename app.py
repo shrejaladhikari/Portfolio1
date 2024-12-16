@@ -1,8 +1,9 @@
 from flask import Flask, render_template
-from flask_cors import CORS
+from flask_cors import CORS  # Import Flask-Cors
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # Enable CORS for all routes
+
 
 @app.route("/")
 def home():
@@ -42,5 +43,5 @@ def projects():
 def contact():
     return render_template('contact.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
