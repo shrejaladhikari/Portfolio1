@@ -1,9 +1,10 @@
-
+/* Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f3e8; /* Creamy background */
 }
 
+/* Hero Section */
 .hero-section h1 {
   font-size: 3rem;
   color: #333;
@@ -13,6 +14,7 @@ p.lead {
   font-size: 1.5rem;
 }
 
+/* Text Color */
 .blue-text {
   color: #1e90ff; /* Blue for Data Analytics */
   font-weight: bold;
@@ -22,14 +24,19 @@ p.lead {
   color: #ffb703; /* Yellow for Machine Learning Enthusiast */
   font-weight: bold;
 }
+
 .ml1-text {
- color: #FFA500
- font-weight: bold;
-}
-img {
-  border: 3px solid #6c63ff;
+  color: #ffa500; /* Fixed: Added missing semicolon */
+  font-weight: bold;
 }
 
+/* Image Styling */
+img {
+  border: 3px solid #6c63ff;
+  border-radius: 8px; /* Added smooth corners */
+}
+
+/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -39,64 +46,26 @@ img {
 .social-icons a {
   font-size: 1.8rem;
   color: #333;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
   color: #1e90ff; /* Hover effect */
+  transform: scale(1.1); /* Slight zoom */
 }
 
+/* Buttons */
 .btn-primary {
   font-weight: bold;
+  background-color: #1e90ff;
+  border: none;
 }
 
-.arrow {
-  display: inline-block;
-  transition: transform 0.3s ease;
+.btn-primary:hover {
+  background-color: #156cc1;
+  color: #fff;
 }
 
-.btn-primary:hover .arrow {
-  transform: translateX(10px);
-}
-
-
-/* Custom Cursor Animation */
-@keyframes cursor-move-click {
-  0% {
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    top: 50%;
-    left: 30%;
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  75% {
-    top: 50%;
-    left: 30%;
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#cursor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 32px;
-  height: 32px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Arrow_cursor.png') no-repeat;
-  background-size: contain;
-  pointer-events: none;
-  z-index: 1000;
-  animation: cursor-move-click 3s ease-in-out infinite;
-}
 /* GitHub Section Styling */
 .github-link {
   color: #333;
@@ -112,6 +81,7 @@ img {
   color: #1e90ff; /* Blue hover color */
   transform: scale(1.1);
 }
+
 /* Navbar Styling */
 .navbar {
   background-color: #ffffff;
@@ -149,4 +119,50 @@ img {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+/* Skills Page Styling */
+.container h3 {
+  margin-top: 30px;
+  color: #333333;
+}
+
+.text-primary {
+  color: #1e90ff;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+/* Icon Styling */
+i {
+  margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  p.lead {
+    font-size: 1.2rem;
+  }
 }
