@@ -1,0 +1,152 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f3e8; /* Creamy background */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+p.lead {
+  font-size: 1.5rem;
+}
+
+.blue-text {
+  color: #1e90ff; /* Blue for Data Analytics */
+  font-weight: bold;
+}
+
+.ml-text {
+  color: #ffb703; /* Yellow for Machine Learning Enthusiast */
+  font-weight: bold;
+}
+.ml1-text {
+ color: #FFA500
+ font-weight: bold;
+}
+img {
+  border: 3px solid #6c63ff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #1e90ff; /* Hover effect */
+}
+
+.btn-primary {
+  font-weight: bold;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .arrow {
+  transform: translateX(10px);
+}
+
+
+/* Custom Cursor Animation */
+@keyframes cursor-move-click {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    top: 50%;
+    left: 30%;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  75% {
+    top: 50%;
+    left: 30%;
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Arrow_cursor.png') no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 1000;
+  animation: cursor-move-click 3s ease-in-out infinite;
+}
+/* GitHub Section Styling */
+.github-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.github-link i {
+  margin-top: 10px;
+}
+
+.github-link:hover {
+  color: #1e90ff; /* Blue hover color */
+  transform: scale(1.1);
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e90ff !important; /* Highlight the brand name in blue */
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #555 !important; /* Slightly dark text for links */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #1e90ff !important; /* Blue hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.navbar-nav .nav-link.active {
+  color: #1e90ff !important;
+  border-bottom: 2px solid #1e90ff; /* Underline active link */
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
